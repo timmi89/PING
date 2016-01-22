@@ -6,14 +6,42 @@ for (i = 1; i <= userNum; i++){
    if(i % 15===0) {
     console.log ("pingpong");
   } else if(i % 3===0) {
-    console.log ("ping");
+  console.log ("ping");
   } else if (i % 5===0) {
   console.log ("pong");
   } else {
-    console.log (i);
+  console.log (i);
   }
  }
 };
+
+$(document).ready(function() {
+
+
+  $("form#inquiry").submit(function(event) {
+   var userNum = parseInt($("input#userNum").val());
+    var result = pingPong(userNum);
+
+$("#result").show();
+$("#result").text(result);
+
+   event.preventDefault();
+
+ });
+});
+//passes spec
+// var pingPong = function(number){
+//
+//  if (number % 15 === 0){
+//    return 'pingpong';
+//  } else if (number % 5 === 0){
+//    return 'pong';
+//  } else if (number % 3 === 0){
+//    return 'ping';
+//  } else {
+//   return i;
+//  }
+// };
 
 // var pingPong = function(number){
 //  var i;
