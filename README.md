@@ -19,7 +19,7 @@ _If you would like to amend this project, please be aware that it uses Bootstrap
 
 ## Known Bugs
 
-_None to my knowledge..._
+_HUGE BUG!!!! I can't figure out how to make it print in the browser and is currently only printing in the console. Sorry._
 
 ## Support and contact details
 
