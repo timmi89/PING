@@ -1,7 +1,7 @@
 
 # _Ping Pong_
 
-#### _Type in your choosen number and recieve a list of all the numbers, up to and including your number, as well as some pings and pongs., January 2016_
+#### _Type in your choosen number and recieve a list of all the numbers, up to and including your number, as well as some pings and pongs. January 2016_
 
 #### By _**timmi mcguire and epicodus**_
 
