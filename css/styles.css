@@ -1,3 +1,10 @@
 #result {
   display: none;
 }
+#will-ferrell {
+  float: right;
+  padding: 50px;
+}
+body{
+  background-color: #cc0000;
+}

@@ -1,18 +1,19 @@
 //works!//
 var pingPong = function(userNum){
-var i;
+var array = [];
 
-for (i = 1; i <= userNum; i++){
+for (var i = 1; i <= userNum; i++){
    if(i % 15===0) {
-    console.log ("pingpong");
+  array.push("pingpong");
   } else if(i % 3===0) {
-  console.log ("ping");
+array.push("ping");
   } else if (i % 5===0) {
-  console.log ("pong");
+array.push("pong");
   } else {
-  console.log (i);
+array.push(i);
   }
  }
+ return array;
 };
 
 $(document).ready(function() {
@@ -29,6 +30,7 @@ $("#result").text(result);
 
  });
 });
+
 //passes spec
 // var pingPong = function(number){
 //
@@ -43,38 +45,48 @@ $("#result").text(result);
 //  }
 // };
 
-// var pingPong = function(number){
-//  var i;
-//  for (i =1; i<= number; i++){
-//  if (number % 15 === 0){
-//    console.log 'pingpong';
-//  } else if (number % 5 === 0){
-//    console.log 'pong';
-//  } else if (number % 3 === 0){
-//    console.log 'ping';
-//  } else {
-//   console.log i;
-//  }
-//  }
-// };
 
-
-// var pingPong = function(userInput){
-// var i;
-// for (i = 1; i <= userInput; i++){
-//   if(i % 15===0){
-//   console.log ("pingpong");
-//   } else if(i%3===0){
-//     console.log ("ping");
-//   } else if (i%5===0){
-//   console.log ("pong");
-//   } else {
-//   console.log (i);
+//trying something else
+// var pingpong = function(userNum) {
+//   var set = [];
+//   for (var i = 0; i <= userNum) {
+//     if (i % 15 === 0) {
+//       set.push("pingpong");
+//     } else if (i % 5 === 0) {
+//       set.push("pong");
+//     } else if (i % 3 === 0) {
+//       set.push("ping");
+//     } else {
+//       set.push(i);
+//     }
+//     i++;
 //   }
-//  }
-// };
+//   return set;
+// }
+//
 
-// $("#result").append(result);
-//    event.preventDefault();
-//  });
+// $(document).ready(function() {
+//   $("form#userForm").submit(function(event) {
+//     var integer = parseInt($("input#userInput")).val();
+//     var result = pingPong(userNum);
+//
+//     $("#output").text(result);
+//     event.preventDefault();
+//   });
 // });
+
+// var pingPong= function(userNum) {
+//   var num = []
+//
+//   for (i=1; i <= userNum; i++){
+//     if (i % 15===0) {
+//        return ("pingpong");
+//     } else if (i % 5===0){
+//        return ("pong");
+//     } else if (i % 3===0){
+//      return ("ping");
+//     } else {
+//        (i);
+//     }
+//   }
+// };

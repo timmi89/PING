@@ -1,5 +1,5 @@
-describe('pingPong', function() {
-  it("takes a number that is divisible by 15, and returns 'pingpong'", function() {
+describe('pingpong', function() {
+  it("takes a number that is divisible by 15, and  'pingpong'", function() {
       expect(pingPong(45)).to.equal('pingpong');
     });
 
